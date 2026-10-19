@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: three-tier-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    volumes:
+      # Optional bind mount: edit files in ./app/code and just refresh the browser.
+      # Remove this line if you only want the files baked into the image.
+      - ./app/code:/usr/share/nginx/html:ro

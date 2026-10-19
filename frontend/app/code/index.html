@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three-Tier Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Task Manager</h1>
+    <p class="subtitle">Frontend &rarr; Backend API &rarr; PostgreSQL</p>
+
+    <div id="status" class="status">Checking backend...</div>
+
+    <form id="task-form">
+      <input id="task-input" type="text" placeholder="Add a new task..." autocomplete="off" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="task-list"></ul>
+    <p id="empty" class="empty" hidden>No tasks yet. Add your first one!</p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

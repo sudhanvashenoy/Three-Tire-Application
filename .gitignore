@@ -1,0 +1,6 @@
+node_modules/
+.env
+.DS_Store
+
+# Postgres data created by the bind mount (keep the folder, ignore the data)
+backend/volumes/postgres-data/
