@@ -73,3 +73,44 @@ button.delete { background: #ef4444; padding: 6px 12px; font-size: 0.8rem; }
 button.delete:hover { background: #dc2626; }
 
 .empty { text-align: center; color: #94a3b8; margin: 24px 0 0; }
+
+/* ---------- login / register ---------- */
+[hidden] { display: none !important; }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tab { flex: 1; background: #e2e8f0; color: #334155; }
+.tab:hover { background: #cbd5e1; }
+.tab.active { background: #2563eb; color: #fff; }
+
+#auth-form { flex-direction: column; }
+#auth-form input { flex: none; }
+
+input[type="email"],
+input[type="password"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+input[type="email"]:focus,
+input[type="password"]:focus { outline: 2px solid #2563eb; border-color: transparent; }
+
+.userbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+button.secondary { background: #64748b; padding: 6px 12px; font-size: 0.85rem; }
+button.secondary:hover { background: #475569; }
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin: 0 0 16px;
+}

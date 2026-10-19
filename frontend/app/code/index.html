@@ -13,13 +13,36 @@
 
     <div id="status" class="status">Checking backend...</div>
 
-    <form id="task-form">
-      <input id="task-input" type="text" placeholder="Add a new task..." autocomplete="off" required />
-      <button type="submit">Add</button>
-    </form>
+    <!-- Login / Register -->
+    <section id="auth-view" hidden>
+      <div class="tabs">
+        <button type="button" id="tab-login" class="tab active">Login</button>
+        <button type="button" id="tab-register" class="tab">Register</button>
+      </div>
+      <form id="auth-form">
+        <input id="name" type="text" placeholder="Full name" autocomplete="name" />
+        <input id="email" type="email" placeholder="Email" autocomplete="email" required />
+        <input id="password" type="password" placeholder="Password (min 6 characters)" autocomplete="current-password" required minlength="6" />
+        <button type="submit" id="auth-submit">Login</button>
+      </form>
+      <p id="auth-error" class="error" hidden></p>
+    </section>
 
-    <ul id="task-list"></ul>
-    <p id="empty" class="empty" hidden>No tasks yet. Add your first one!</p>
+    <!-- Tasks (shown after login) -->
+    <section id="app-view" hidden>
+      <div class="userbar">
+        <span id="welcome"></span>
+        <button type="button" id="logout" class="secondary">Logout</button>
+      </div>
+
+      <form id="task-form">
+        <input id="task-input" type="text" placeholder="Add a new task..." autocomplete="off" required />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="task-list"></ul>
+      <p id="empty" class="empty" hidden>No tasks yet. Add your first one!</p>
+    </section>
   </main>
 
   <script src="config.js"></script>

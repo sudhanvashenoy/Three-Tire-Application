@@ -31,6 +31,7 @@ services:
       DB_USER: appuser
       DB_PASSWORD: apppassword
       DB_NAME: appdb
+      JWT_SECRET: change-this-secret-before-real-use
     ports:
       - "5000:5000"
     depends_on:

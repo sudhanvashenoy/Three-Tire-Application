@@ -1,14 +1,16 @@
 {
   "name": "three-tier-backend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Backend API for the three-tier task manager",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.12.0"
   }
 }
